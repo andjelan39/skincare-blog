@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { AiFillLike } from 'react-icons/ai'
 import { BsFillBookmarkPlusFill } from 'react-icons/bs'
 import { FaArrowRight } from 'react-icons/fa'
@@ -24,6 +24,8 @@ const BlogItem = ({ blog: {
         authorName: authorName,
         createdAt: createdAt
     }
+    const[btnColor, setBtnColor]=useState("btn");
+
     return (
         <div className="card">
             <div className="card-header">
@@ -43,12 +45,12 @@ const BlogItem = ({ blog: {
                     </div>
                 </div>
                 {inBookmarks === 1 ? (<div className="card-buttons">
-                    <button><AiFillLike /></button>
-                    <button onClick={() => addToBookmarks(id)}><BsFillBookmarkPlusFill /></button>
-                    <Link to='/blog' state={data}><button><FaArrowRight /></button></Link>
+                    <button className={btnColor} onClick={()=>setBtnColor((btnColor)=>(btnColor==="btn" ? "btn-red" : "btn"))}><AiFillLike /></button>
+                    <button className='btn' onClick={() => addToBookmarks(id)}><BsFillBookmarkPlusFill /></button>
+                    <Link to='/blog' state={data}><button className='btn'><FaArrowRight /></button></Link>
                 </div>) : (<div className="card-buttons">
-                    <button onClick={() => removeFromBookmarks(id)}><BsBookmarkXFill /></button>
-                    <Link to='/blog' state={data}><button><FaArrowRight /></button></Link>
+                    <button onClick={() => removeFromBookmarks(id)} className='btn'><BsBookmarkXFill /></button>
+                    <Link to='/blog' state={data}><button className='btn'><FaArrowRight /></button></Link>
                 </div>)}
             </div>
         </div>

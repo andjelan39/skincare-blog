@@ -9,6 +9,7 @@ import Pagination from './components/Pagination';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Bookmarks from './components/Bookmarks';
 import Blog from './components/Blog';
+import Form from './components/Form';
 
 function App() {
 
@@ -63,6 +64,7 @@ function App() {
               setCurrentPage={setCurrentPage}
               currentPage={currentPage}
             />
+            <Form/>
           </React.Fragment>
         } />
         <Route path='/bookmarks' element={<Bookmarks blogs={bookmark} removeFromBookmarks={removeFromBookmarks} />} />

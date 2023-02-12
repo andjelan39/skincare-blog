@@ -77,46 +77,6 @@ body {
   margin-bottom: 10px;
 }
 
-.searchBar-wrap {
-  background-color: #f0f0f0;
-  width: fit-content;
-  margin: 2rem auto 2rem auto;
-  padding: 0.5rem;
-  border-radius: 5px;
-}
-
-.searchBar-wrap form {
-  display: flex;
-  align-items: center;
-}
-
-.searchBar-wrap input {
-  background-color: #f0f0f0;
-  font-size: large;
-  outline: none;
-  border: none;
-}
-
-.searchBar-wrap span {
-  padding-right: 0.8rem;
-  cursor: pointer;
-}
-
-.searchBar-wrap button {
-  outline: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.3rem 1rem;
-  border-radius: 5px;
-  background-color: rgb(8, 71, 49);
-  color: #fff;
-  font-size: large;
-}
-
-.searchBar-wrap button:hover{
-  background-color: rgb(68, 136, 112);
-}
-
 .container-posts{
   display: flex;
   flex-wrap: wrap;
@@ -195,7 +155,7 @@ img{
   justify-content: end;
 }
 
-.card-buttons button{
+.btn{
   outline: none;
   border: none;
   cursor: pointer;
@@ -203,6 +163,17 @@ img{
   border-radius: 5px;
   background-color: rgb(55, 103, 86);
   color: #fff;
+  font-size: medium;
+}
+
+.btn-red{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 10px;
+  border-radius: 5px;
+  background-color: rgb(55, 103, 86);
+  color: rgb(241, 167, 167);
   font-size: medium;
 }
 
@@ -381,4 +352,72 @@ img{
   font-size: 18px;
   margin-top: 1rem;
   line-height: 1.55;
+}
+
+.form-header {
+  text-align: center;
+}
+
+.form-header h2 {
+  color: rgb(50, 88, 63);
+  font-size: 2rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.7rem;
+}
+
+.form-header p {
+  color: #726f6f;
+  font-weight: 500;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.formSubs{
+  margin-top: 10px;
+  background-color: rgb(117, 130, 114);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 10px;
+  justify-content: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 20px;
+}
+
+.formSubs label{
+  padding: 7px;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.formSubs input{
+  border-radius: 10px;
+  border: 1px solid white;
+  text-align: left;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+.formSubs input:focus{
+  background-color: #c5dac6;
+  outline: none;
+}
+
+.formSubs button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.3rem 1rem;
+  margin-top: 7px;
+  border-radius: 5px;
+  background-color: rgb(7, 39, 28);
+  color: #fff;
+  font-size: large;
+}
+
+.formSubs button:hover{
+  background-color: rgb(15, 82, 59);
 }
