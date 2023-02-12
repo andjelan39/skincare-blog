@@ -6,8 +6,7 @@ import {AiFillFacebook} from 'react-icons/ai'
 
 const Footer = () => {
     return (
-        <div>
-            <footer>
+        <div className='footer'>
                 <div className='footer-content'>
                     <h3>Skincare Blog</h3>
                     <p>Brought to you by CeraVe. <br/> For contact and CeraVe products check the links below. </p>
@@ -21,7 +20,6 @@ const Footer = () => {
                 <div className='footer-bottom'>
                     <p>copyright &copy;2023 CeraVe.</p>
                 </div>
-            </footer>
         </div>
     )
 }

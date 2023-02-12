@@ -1,12 +1,17 @@
 import React from 'react'
 import BlogItem from './BlogItem'
 
-const BlogPosts = ({blogs}) => {
+const BlogPosts = ({ blogs, addToBookmarks }) => {
+
   return (
-    <div className='blogPosts-wrap'>
+    <div>
+      <div className='blogPosts-wrap'>
         {blogs.map((blog) => (
-        <BlogItem blog={blog} key={blog.id} />
-      ))}
+          <BlogItem blog={blog} key={blog.id} inBookmarks={1}
+            addToBookmarks={addToBookmarks}
+          />
+        ))}
+      </div>
     </div>
   )
 }

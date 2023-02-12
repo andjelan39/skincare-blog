@@ -1,11 +1,10 @@
 import React from 'react'
-import SearchBar from './SearchBar'
 
 const Header = () => {
     return (
         <div>
             <div className='container'>
-                <header className='home-header'>
+                <div className='home-header'>
                     <h2>Welcome to</h2>
                     <h1>
                         <span>“</span> Skincare Blog <span>”</span>
@@ -16,8 +15,7 @@ const Header = () => {
                         perfect skin care routine. Whether your skin is sensitive, dry or acne-prone, you'll find tips for <br />
                         all your concerns.
                     </p>
-                    <SearchBar></SearchBar>
-                </header>
+                </div>
             </div>
         </div>
     )

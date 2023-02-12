@@ -29,6 +29,18 @@ body {
   color: rgb(8, 71, 49);
 }
 
+.navBar p{
+  font-size: 0.65em;
+}
+
+.navBar a:link,
+.navBar a:visited,
+.navBar a:hover,
+.navBar a:active{
+  text-decoration: none;
+  color: rgb(8, 71, 49);
+}
+
 .container {
   max-width: 1140px;
   width: 95%;
@@ -62,6 +74,7 @@ body {
   color: #726f6f;
   font-weight: 500;
   font-size: 1.1em;
+  margin-bottom: 10px;
 }
 
 .searchBar-wrap {
@@ -92,6 +105,7 @@ body {
 .searchBar-wrap button {
   outline: none;
   border: none;
+  cursor: pointer;
   padding: 0.3rem 1rem;
   border-radius: 5px;
   background-color: rgb(8, 71, 49);
@@ -100,7 +114,7 @@ body {
 }
 
 .searchBar-wrap button:hover{
-  background-color: rgb(13, 131, 90);
+  background-color: rgb(68, 136, 112);
 }
 
 .container-posts{
@@ -184,6 +198,7 @@ img{
 .card-buttons button{
   outline: none;
   border: none;
+  cursor: pointer;
   padding: 8px 10px;
   border-radius: 5px;
   background-color: rgb(55, 103, 86);
@@ -191,7 +206,16 @@ img{
   font-size: medium;
 }
 
+.card-buttons button:link,
+.card-buttons button:visited,
+.card-buttons button:hover,
+.card-buttons button:active{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
 .card-buttons button:hover{
+  text-decoration: none;
   background-color: rgb(95, 152, 132);
 }
 
@@ -204,6 +228,7 @@ img{
   width: 95%;
   margin: 30px auto;
   padding: 1rem 0;
+  min-height: 50vh;
 }
 
 @media (max-width: 768px) {
@@ -225,18 +250,10 @@ img{
   margin-left: 20px;
   position: absolute;
   right: 80px;
+  gap: 15px;
 }
 
-.broj-postova {
-  background-color: rgb(111, 140, 110);
-  color: white;
-  border-radius: 5px;
-  text-align: center;
-  padding: 5px 10px;
-  margin-left: 15px;
-}
-
-footer{
+.footer{
   bottom: 0;
   left: 0;
   right: 0;
@@ -271,7 +288,7 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1rem 0 2rem 0;
+  margin: 1rem 2.5rem 2rem 0;
 }
 .socials li{
   margin: 0 8px;
@@ -298,4 +315,70 @@ footer{
   font-size: 14px;
   word-spacing: 2px;
   text-transform: capitalize;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 35px;
+  margin-top: 0;
+}
+
+.pagination button {
+  width: 40px;
+  height: 40px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #ffffff;
+  color: rgb(176, 174, 174);
+  border-color: #eee;
+}
+
+.pagination button.active {
+  font-weight: 900;
+  border-color: #ffffff;
+  background: #abc8ad;
+  color: #0e351e;
+}
+
+.book-header h2 {
+  color: rgb(50, 88, 63);
+  font-size: 1.5rem;
+}
+
+.blog-wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.blog-wrap header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.blog-date {
+  margin: 20px 0 20px 0;
+  font-size: 1rem;
+  color: #585757;
+  font-weight: 500;
+  text-align: left;
+}
+
+.blog-wrap img {
+  width: 100%;
+}
+
+.blog-desc {
+  padding: 1rem;
+  margin-top: 1.5rem;
+  text-align: justify;
+  font-size: 18px;
+  margin-top: 1rem;
+  line-height: 1.55;
 }
